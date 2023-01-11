@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">  
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="../ecobici/img/logo.png" type="image/icon type" />
+  
   <title>Eco Bici</title>
 </head>
 
@@ -25,7 +27,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#top-fold">Inicio</a>
+              <a class="nav-link" aria-current="page" href="#top-fold">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#ecoBici">Ecobici</a>
@@ -60,20 +62,26 @@
     </div>
   </main>
   <!--seccion menu-->
-  <section class="container py-lg-5 my-lg-3">
-    <div class="row d-flex justify-content-center align-content-center">
-      <div class="d-flex col-lg-4 justify-content-center">
-        <a href="">  <img src="./img/bike.svg" alt="" class="icon-img py-lg-3" /> 
-          ¿Qué es Ecobici?
+  <section class="container py-lg-5 my-lg-3 m-lg-auto">
+    <div class="row justify-content-center align-content-center">
+      <div class="col-lg-4 justify-content-center content-top-cta">
+        <a href="#ecoBici" class="top-cta">  
+          <i class="bi bi-bicycle icon-primary py-lg-1"></i> 
+          <span>¿Qué es Ecobici?</span>
         </a>       
       </div>
-      <div class="d-flex col-lg-4 justify-content-center">
-        <img src="./img/america.svg" alt="" class="icon-img py-lg-3" />
-        <p>EcoBici en Latinoamérica</p>
+      <div class="col-lg-4 justify-content-center content-top-cta">
+       <a href="#bikeAmerica" class="top-cta"> 
+        <i class="bi bi-globe-americas icon-primary py-lg-1"></i>
+        <span>EcoBici en Latinoamérica</span>
+      </a>        
       </div>
-      <div class="d-flex col-lg-4 align-items-center">
-        <img src="./img/nature.svg" alt="" class="icon-img py-lg-3 te" />
-        <p>Impacto Ambiental</p>
+      <div class="col-lg-4 align-items-center content-top-cta">
+        <a href="#impactoAmb" class="top-cta">
+          <i class="bi bi-tree icon-primary py-lg-1"></i>
+          <span>Impacto Ambiental</span>
+        </a>
+       
       </div>
     </div>
   </section>
@@ -93,18 +101,18 @@
   </section>
 
   <!--section 2-->
-  <section class="row container justify-content-center py-lg-5 my-lg-3 m-lg-auto">
-    <div class="col-lg-4 m-auto">
-      <h2>EcoBici en Latinoamérica</h2>
-      <span>Bicicletas en América Latina: mucho camino que recorrer.</span>
-      <p>
+  <section id="bikeAmerica" class="row container justify-content-center py-lg-5 my-lg-3 m-lg-auto">
+    <div class="col-lg-6 m-auto">
+      <h2 class="pb-1">EcoBici en Latinoamérica</h2>
+      <span class="py-2 fw-bold">Bicicletas en América Latina: mucho camino que recorrer.</span>
+      <p class="pt-2 pe-lg-5">
         En el Día Internacional de la Bicicleta, DW repasa los logros y retos
         de este medio de transporte sostenible en las principales ciudades de
         la región. Bogotá, Rosario, Santiago y Ciudad de México están a la
         vanguardia.
       </p>
     </div>
-    <div class="text-center col-lg-4 m-auto justify-content-center">
+    <div class="text-center col-lg-6 m-auto justify-content-center">
       <img src="./img/mapa-bicis.svg" alt="img-fluid py-5 my-5" />
       <p class="text-muted py-5 my-5">
         Número de viajes en bicibleta reportados por día.
@@ -112,7 +120,7 @@
     </div>
   </section>
   <!--section 3-->
-  <section class="row container justify-content-center py-lg-5 my-lg-3 m-lg-auto">
+  <section id="impactoAmb" class="row container justify-content-center py-lg-5 my-lg-3 m-lg-auto">
     <div class="col-6 containter m-lg-auto">
       <div class="px-3 py-2">
         <h2>Impacto Ambiental</h2>
@@ -185,16 +193,16 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Recibir mails</label>
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-green">Enviar</button>
         </form>
       </div>
       <div class="col-lg-4 justify-content-end align-content-center align-items-center">
         <ul class="list-contact list-unstyled justify-content-end">
-          <li class="p-3"><a href=""><img src="./img/map.svg" alt="" class="icon-contact px-2">Dirección: Calle 123 -
+          <li class="p-3"><a href=""><i class="bi bi-geo-alt icon-contact px-2"></i> Dirección: Calle 123 -
               CABA</a></li>
-          <li class="p-3"><a href=""><img src="./img/mail.svg" alt="" class="icon-contact px-2">E-mail:
+          <li class="p-3"><a href=""><i class="bi bi-envelope-at icon-contact px-2"></i> E-mail:
               info@ecobici.com.ar</a></li>
-          <li class="p-3"><a href=""><img src="./img/phone.svg" alt="" class="icon-contact px-2">Teléfono: 11 1234
+          <li class="p-3"><a href=""><i class="bi bi-telephone icon-contact px-2"></i> Teléfono: 11 1234
               5678</a></li>
         </ul>
       </div>
@@ -205,17 +213,17 @@
     <div class="d-flex row justify-content-center">
       <h3 class="text-center">Encontranos en:</h3>
       <ul class="list-unstyled d-inline-flex align-items-center justify-content-center py-lg-4 py-sm-2">
-        <li class="px-3"><a href="#"><img src="./img/facebook.svg" alt="facebook" class="icon-img"></a></li>
-        <li class="px-3"><a href="#"><img src="./img/twitter.svg" alt="twitter" class="icon-img"></a></li>
-        <li class="px-3"><a href="#"><img src="./img/instagram.svg" alt="instagram" class="icon-img"></a></li>
-        <li class="px-3"><a href="#"><img src="./img/linkedin.svg" alt="linkedin" class="icon-img"></a></li>
-        <li class="px-3"><a href="#"><img src="./img/whatsapp.svg" alt="whatsapp" class="icon-img"></a></li>
+        <li class="px-3"><a href="#"><i class="bi bi-facebook icon-img"></i> </a></li>
+        <li class="px-3"><a href="#"><i class="bi bi-twitter icon-img"></i></a></li>
+        <li class="px-3"><a href="#"><i class="bi bi-instagram icon-img"></i></a></li>
+        <li class="px-3"><a href="#"><i class="bi bi-linkedin icon-img"></i></a></li>
+        <li class="px-3"><a href="#"><i class="bi bi-whatsapp icon-img"></i></a></li>
       </ul>
     </div>
   </section>
-  <footer class="container py-lg-5 my-lg-3">
-<div class="row d-flex">
-  <div class="col-lg-4">
+  <footer class="container pt-lg-5 mt-lg-3">
+<div class="row justify-content-center">
+  <div class="text-footer-container col-lg-4">
 <div>
   <img src="./img/logo.png" alt="logo" class="img-logo-footer pb-3">
 </div>
@@ -227,7 +235,7 @@
 
   <div id="subscribe" class="col-lg-4">
     <form action="#">
-      <label for="email" class="my-2">Suscribite para más Noticias</label>
+      <label for="email" class="mb-2">Suscribete para más Noticias</label>
       <br>
       <input type="email" class="my-2">
       <br>
@@ -242,7 +250,10 @@
       <li><a href="#">México</a></li>
     </ul>
   </div>
-  <p class="text-center">Diseño y Desarrollo Web © Lizbeth Limprich</p>
+ 
+</div>
+<div class="copy-info_container">
+  <p class="text-center copy-info">Diseño y Desarrollo Web © Lizbeth Limprich</p>
 </div>
   </footer>
 
