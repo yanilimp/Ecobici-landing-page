@@ -1,0 +1,38 @@
+@media (max-width: 700px){
+    h1 {
+        font-size: 50px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    .subtitle{
+        font-size: 18px;
+    }
+    .icon-img{
+        font-size: 20px;
+    }
+    .container{
+        padding: 12px 5px;
+    }
+    #ecoBici h2{
+        text-align: left;
+    }
+    #ecoBici p{
+        text-align: left;
+    }
+    #ecoBici{
+        margin-top: 50px !important;
+    }
+    #contact ul li{
+        padding-left: 0 !important;
+    }
+    .icon-contact{
+        font-size: 20px;
+    }
+    #subscribe{
+        padding:50px 10px;
+    }
+    footer {
+        padding: auto 30px;
+    }
+}
