@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+   color: #494B4B;
+}
+
+.nav-item a:hover{
+    color: #77B425;
+}
+
+h1{
+    font-size:100px;
+    font-weight: bold;
+    color: #77B425;
+}
+h2{
+    font-size:50px;
+    font-weight: bold;
+    color: #77B425; 
+}
+h3{
+    font-size:40px;
+    font-weight: bold;
+    color: #77B425;
+}
+
+
+.subtitle {
+    font-size: 30px;
+    font-weight: 500;
+    color: #494B4B;
+}
+
+.icon-img {
+    width: auto;
+    height: 60px;
+}
+
+.icon-contact {
+    width: auto;
+    height: 20px;
+}
+.list-importancia li::marker{
+    color: #77B425;
+    font-size: 25px;
+}
+.list-footer a, .list-contact a{
+    color: #494B4B;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.list-footer a:hover, .list-contact a:hover{
+    color: #77B425;
+}
+.img-logo-footer {
+    width: 50px;
+    height: auto;
+}
+
+footer p{
+    line-height: 30px;
+}
